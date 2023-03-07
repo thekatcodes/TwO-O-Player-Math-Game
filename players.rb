@@ -1,7 +1,9 @@
 # Checks players' names and lives
 
 class Players
-    def Initialize(name)
+    attr_accessor :lives, :name
+
+    def initialize(name)
         @name = name
         @lives = 3
     end
