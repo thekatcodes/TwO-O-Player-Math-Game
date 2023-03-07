@@ -24,12 +24,18 @@ class Game
             else 
                 puts "Wrong answer :("
                 self.current_player.lose_life
+                puts "#{self.player1.name}: #{self.player1.lives}/3 vs #{self.player2.name}: #{self.player2.lives}/3"
             end
 
             # check player lives, if 0 -> set winner to true
             if self. current_player.lives == 0
                 puts "#{self.current_player.name}, you lost..."
                 self.winner = true
+                if self.current_player == self.player1 then
+                    puts "Player 2 wins with a score of #{self.player2.lives}/3"
+                else 
+                    puts "Player 1 wins with a score of #{self.player1.lives}/3"
+                end
             end
 
             # initiate new question
