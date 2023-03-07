@@ -33,9 +33,9 @@ class Game
                 puts "#{self.current_player.name}, you lost..."
                 self.winner = true
                 if self.current_player == self.player1 then
-                    puts "Player 2 wins with a score of #{self.player2.lives}/3"
+                    puts "#{self.player2.name} wins with a score of #{self.player2.lives}/3"
                 else 
-                    puts "Player 1 wins with a score of #{self.player1.lives}/3"
+                    puts "#{self.player1.name} wins with a score of #{self.player1.lives}/3"
                 end
                 puts "----- GAME OVER -----"
                 puts "Thanks for playing!"
