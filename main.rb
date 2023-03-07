@@ -15,6 +15,7 @@ class Game
 
     def play()
         while !self.winner do
+            puts "----- NEW TURN -----"
             puts "#{self.current_player.name}, your turn!"
             self.question.question
 
@@ -36,6 +37,8 @@ class Game
                 else 
                     puts "Player 1 wins with a score of #{self.player1.lives}/3"
                 end
+                puts "----- GAME OVER -----"
+                puts "Thanks for playing!"
             end
 
             # initiate new question
