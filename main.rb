@@ -32,6 +32,7 @@ class Game
             if self. current_player.lives == 0
                 puts "#{self.current_player.name}, you lost..."
                 self.winner = true
+                #check which player lost and announce other player's victory
                 if self.current_player == self.player1 then
                     puts "#{self.player2.name} wins with a score of #{self.player2.lives}/3"
                 else 

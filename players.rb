@@ -1,5 +1,4 @@
-# Checks players' names and lives
-
+# players' names and lives
 class Players
     attr_accessor :lives, :name
 
@@ -7,7 +6,8 @@ class Players
         @name = name
         @lives = 3
     end
-# method to remove lives 
+
+    # method to remove lives 
     def lose_life
         self.lives -= 1
     end
